@@ -1,19 +1,152 @@
-@media only screen and (max-width: 600px){
-    #fire{
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #001021;
+    background: #EAE0D5;
+}
+
+section {
+    width: 100%;
+}
+
+#features {
+    padding-top: 250px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.icon{
+    font-size: 4rem;
+    color: #887b35
+}
+
+#youtube {
+    padding-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.wrapper {
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#pricing {
+    display: flex;
+    padding-top: 100px;
+}
+
+.card {
+    width: 33%;
+    border: 1px;
+    border-style: solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#nav-bar {
+    display: flex;
+    width: 30%;
+    margin: 0 0 0 auto;
+    justify-items: center;
+    align-items: center;
+}
+
+#nav-bar > a {
+    width: 33%;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#nav-bar > a:hover {
+    background: #2e78c3;
+}
+
+#header {
+    position: fixed;
+    margin-bottom: 20px;
+    display: flex;
+    width: 100%;
+    background: #409eff;
+}
+
+#header > img {
+    width: 25%;
+    min-width: 275px;
+    height: auto;
+}
+
+#form {
+    display: flex;
+    padding-top: 150px;
+    justify-content: center;
+    align-items: center;
+}
+
+#randomText {
+    font-size: 1.5rem;
+}
+
+.inlineImgLeft {
+    padding: 0 15px;
+    float: left;
+    height: 40vh;
+}
+
+.inlineImgRight {
+    padding: 0 15px;
+    float: right;
+    height: 40vh;
+}
+
+footer{
+    height: 25vh;
+    background: #409eff;
+    width: 100%;
+    margin-top: 200px;
+}
+
+@media only screen and (max-width: 600px) {
+    .icon {
         display: none;
     }
-}
 
-#pricing{
-    display: flex; 
-    padding-top:100px;
-}
+    #features {
+        flex-direction: column;
+    }
 
-.card{
-    width: 33%; 
-    border:1px; 
-    border-style:solid; 
-    display:flex; 
-    flex-direction:column; 
-    align-items: center;
+    .wrapper {
+        max-width: 100%;
+    }
+
+    #nav-bar {
+        display: none;
+    }
+
+    #header {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .inlineImgLeft,.inlineImgRight{
+        width: 100%;
+        padding: 0;
+    }
 }
